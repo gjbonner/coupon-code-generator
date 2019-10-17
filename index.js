@@ -40,6 +40,3 @@ function coupon(num, codes, dash){
   
     return codesArr
   }
-  
-  
-  coupon(12, 4, 4)
