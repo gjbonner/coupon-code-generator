@@ -31,8 +31,13 @@ function coupon(num, codes, dash){
         return "invalid"
       }
   
-      
-      codesArr.push(code.join(''))
+      //check if code already is in array
+      if(codesArr.includes(code.join(''))){
+        return 'Code Already Exists'
+      } else {
+        codesArr.push(code.join(''))
+      }
+  
       code = []
      j++
   
